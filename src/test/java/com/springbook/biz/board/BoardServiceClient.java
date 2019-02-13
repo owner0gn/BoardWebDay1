@@ -19,6 +19,7 @@ public class BoardServiceClient {
 		vo.setContent("임시 내용............");
 		boardService.insertBoard(vo);
 		
+		
 		List<BoardVO> boardList = boardService.getBoardList(vo);
 		for(BoardVO board : boardList) {
 			System.out.println("---> " + board.toString());
